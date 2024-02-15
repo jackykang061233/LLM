@@ -1,5 +1,5 @@
 from openai import OpenAI
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def load_text(id):
     with open(f"downloaded_videos/{id}.txt") as f: 
