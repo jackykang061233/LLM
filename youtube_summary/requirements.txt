@@ -1,0 +1,17 @@
+deepmultilingualpunctuation==1.0.1
+faster_whisper==0.10.0
+nemo_toolkit==1.21.0
+nltk==3.8.1
+omegaconf==2.3.0
+openai==1.12.0
+pyannote.audio==3.1.0
+pyannote.core==5.0.0
+pyannote.database==5.0.1
+pyannote.metrics==3.2.1
+pyannote.pipeline==3.0.1
+pydub==0.25.1
+pytest==8.0.0
+pytube==15.0.0
+torch==2.0.1
+wget==3.2
+whisperx==3.1.1

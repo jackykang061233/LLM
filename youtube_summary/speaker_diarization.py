@@ -1,14 +1,15 @@
 from pyannote.audio import Pipeline
-pipeline = Pipeline.from_pretrained(
-    "pyannote/speaker-diarization-3.1",
-    use_auth_token="HUGGINGFACE_ACCESS_TOKEN_GOES_HERE")
 
-# send pipeline to GPU (when available)
+
+pipeline = Pipeline.from_pretrained(
+  "pyannote/speaker-diarization-3.1",
+  use_auth_token="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")
+
 import torch
 pipeline.to(torch.device("cuda"))
 
 # apply pretrained pipeline
-diarization = pipeline("audio.wav")
+diarization = pipeline("downloaded_videos/test.mp3")
 
 # print the result
 for turn, _, speaker in diarization.itertracks(yield_label=True):
