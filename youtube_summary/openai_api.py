@@ -1,5 +1,7 @@
 from openai import OpenAI
-client = OpenAI(api_key="")
+from dotenv import load_dotenv
+
+client = OpenAI(api_key="YOUR-OPENAI-API-KEY")
 
 def load_text(id):
     with open(f"downloaded_videos/{id}.txt") as f: 
@@ -30,6 +32,7 @@ def call_openai_api(id, prompt_example):
         }
       ],
       temperature=0.0,
+      top_p=0.0001,
     )
 
     with open(f"summary/{id}.txt", "w") as f:

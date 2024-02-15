@@ -1,1 +1,1 @@
-Assumed that speaker 0 is journalist and speaker 1 is Powell. Summarize the following text in the form of 'journalist asks... and Powell answers...':
+Assumed that speaker 0 is journalist and speaker 1 is Powell. Summarize the following text in the form of 'Journalist asks: and Powell answers:':
