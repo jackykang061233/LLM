@@ -42,8 +42,8 @@ python3 main.py youtube-url prompt
 ```
 python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers
 ```
-總共有兩個arguments
-arg1(youtube-url): 要下載的youtube網址
+總共有兩個arguments\
+arg1(youtube-url): 要下載的youtube網址\
 arg2(prompt): 有兩種
 1. multi-speakers
 2. single-speaker \
