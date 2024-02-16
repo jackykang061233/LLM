@@ -21,6 +21,7 @@ def get_youtube_id(youtube_url):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('youtube_url', type=str, help='A YouTube URL to process.')
+    parser.add_argument('api_key', type=str, help='The openai api key.')
     parser.add_argument('prompt', type=str, nargs='?', default='multi-speakers', help='Prompt for summarization.')
     args = parser.parse_args()
 
@@ -28,7 +29,7 @@ if __name__ == '__main__':
     
     download_video(id)
     run_diarization_command(id)
-    call_openai_api(id, args.prompt)
+    call_openai_api(id, args.prompt, args.api_key)
 
 
     # url = "https://www.youtube.com/watch?v=ImrKxlLJCEY"

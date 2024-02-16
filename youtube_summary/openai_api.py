@@ -1,8 +1,6 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 
-client = OpenAI(api_key="YOUR-OPENAI-API-KEY")
-
 def load_text(id):
     with open(f"downloaded_videos/{id}.txt") as f: 
         text = f.read()
@@ -17,7 +15,8 @@ def prompt(prompt_example):
     
     return text
 
-def call_openai_api(id, prompt_example):
+def call_openai_api(id, prompt_example, api_key):
+    client = OpenAI(api_key=api_key)
     print("Connecting to openai...")
     response = client.chat.completions.create(
       model="gpt-3.5-turbo-1106",
@@ -37,4 +36,5 @@ def call_openai_api(id, prompt_example):
 
     with open(f"summary/{id}.txt", "w") as f:
         f.write(response.choices[0].message.content)
+    print(f"The summary is saved in the folder summary with the name {id}.txt")
     print("Complete!")
