@@ -34,11 +34,11 @@ scoop install ffmpeg
 pip install -r requirements.txt
 ```
 ## usage
-###格式
+### 格式
 ```
 python3 main.py youtube-url prompt
 ```
-###例子
+### 例子
 ```
 python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers
 ```
