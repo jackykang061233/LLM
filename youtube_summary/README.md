@@ -36,19 +36,20 @@ pip install -r requirements.txt
 ## usage
 ### 格式
 ```
-python3 main.py youtube-url prompt
+python3 main.py youtube-url prompt openai-key
 ```
 ### 例子
 ```
-python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers
+python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers openai-key
 ```
-總共有兩個arguments
+總共有三個arguments
 * arg1(youtube-url): 要下載的youtube網址
-* arg2(prompt): 有兩種
+* arg2(api_key): openai的api-key
+* arg3(prompt): 有兩種(預設為multi-speakers)
   1. multi-speakers
   2. single-speaker
 
-**兩者的差別就在最後連接GPT所給的指令不同**
+  **兩者的差別就在最後連接GPT所給的指令不同**
 
 ** Summary
 下載的summary會儲存在summary資料夾，檔名為youtube影片id(網址中在watch?v=後的)
