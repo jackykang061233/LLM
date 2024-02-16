@@ -36,11 +36,11 @@ pip install -r requirements.txt
 ## usage
 ### 格式
 ```
-python3 main.py youtube-url prompt openai-key
+python3 main.py youtube-url openai-key prompt
 ```
 ### 例子
 ```
-python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers openai-key
+python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY openai-key multi-speakers
 ```
 總共有三個arguments
 * arg1(youtube-url): 要下載的youtube網址
