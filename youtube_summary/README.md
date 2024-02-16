@@ -46,6 +46,6 @@ python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers
 * arg1(youtube-url): 要下載的youtube網址
 * arg2(prompt): 有兩種
   1. multi-speakers
-  2. single-speaker \
+  2. single-speaker
 
 **兩者的差別就在最後連接GPT所給的指令不同**
