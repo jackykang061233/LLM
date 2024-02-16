@@ -51,5 +51,5 @@ python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY openai-key multi-spe
 
   **兩者的差別就在最後連接GPT所給的指令不同**
 
-## Summary
+## summary
 下載的summary會儲存在summary資料夾，檔名為youtube影片id(網址中在watch?v=後的)
