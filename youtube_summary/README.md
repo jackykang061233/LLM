@@ -33,3 +33,18 @@ scoop install ffmpeg
 ```
 pip install -r requirements.txt
 ```
+## usage
+###格式
+```
+python3 main.py youtube-url prompt
+```
+###例子
+```
+python3 main.py https://www.youtube.com/watch?v=ImrKxlLJCEY multi-speakers
+```
+總共有兩個arguments
+arg1(youtube-url): 要下載的youtube網址
+arg2(prompt): 有兩種
+1. multi-speakers
+2. single-speaker
+兩者的差別就在最後連接GPT所給的指令不同
