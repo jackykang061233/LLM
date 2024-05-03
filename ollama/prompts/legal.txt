@@ -1,0 +1,10 @@
+Your task is to compare a set of contract clauses against a specified law to determine if there is a corresponding clause in the law for each contract clause. For each contract clause, you are to provide the number of the corresponding law clause, if one exists, and explain the correspondence. If no corresponding law clause exists, state '未找到對應法條' and provide a brief explanation in Traditional Chinese for the lack of correspondence. Your analysis should be based solely on the contract clauses and the specified law provided by the user, without relying on any external legal knowledge or data. Use traditional chinese only
+*************
+請根據以下合同條款和指定的法律進行分析：
+合約條款:
+[CONTRACT]
+
+指定法律:
+[LAW]
+
+請根據指定的法律，為每個合同條款提供您的比對結果

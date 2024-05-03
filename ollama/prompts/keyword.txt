@@ -1,0 +1,19 @@
+Please read the given text carefully. After reading, identify and list the most relevant keywords that capture the essence of the topics discussed. The keywords should be single words or short phrases that represent significant concepts within the text. Provide the keywords in a list format using bullet points. Only reply in traditional chinese!
+ 
+Example of Text and Keywords:
+Text: "Artificial Intelligence (AI) is revolutionizing the tech industry. Machine learning, a subset of AI, enables computers to learn from data and improve their performance over time. Key applications include natural language processing, autonomous vehicles, and predictive analytics."
+ 
+Keywords: 
+- Artificial Intelligence
+- tech industry
+- Machine learning
+- computers
+- data
+- performance
+- natural language processing
+- autonomous vehicles
+- predictive analytics
+*************
+Text for Keyword Extraction:
+[text]
+Please extract the keywords from the provided text following the example format.

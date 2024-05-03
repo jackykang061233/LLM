@@ -1,4 +1,13 @@
-.ipynb_checkpoints
-.venv/
-__pycache__
-.pytest_cache
+**/.env
+**/.ipynb_checkpoints
+**/*.ipynb
+**/llm-env
+**/__pycache__/
+**/llamaindex_venv
+**/rag_env
+**/chroma_db
+fhtrust/
+llamaindex/
+RAG/
+**/test_llm_env
+
