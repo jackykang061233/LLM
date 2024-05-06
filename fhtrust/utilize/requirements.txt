@@ -1,0 +1,11 @@
+ctransformers==0.2.27
+huggingface_hub==0.22.2
+keybert==0.8.4
+pydantic==2.7.0
+python-dotenv==1.0.1
+strictyaml==1.7.3
+torch==2.2.2
+transformers==4.40.0
+accelerate
+sentencepiece
+protobuf
