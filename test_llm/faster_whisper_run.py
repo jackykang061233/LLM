@@ -24,7 +24,7 @@ def faster_whisper_single_file(audio, output, prompt="以下是繁體中文的�
     print(f"start to  transcribe" )
     start = time.time()
     transcription = ''
-    segments, _ = model.transcribe(audio, initial_prompt=prompt)
+    segments, _ = model.transcribe(audio, initial_prompt=prompt, vad_filter=True, word_timestamps=True, hallucination_silence_threshold=2)
     segments = [seg.text for seg in segments]
     output = output + "/" + audio.split("/")[-1].split('.')[0] + ".txt"
 

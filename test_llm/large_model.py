@@ -11,7 +11,7 @@ def quantization_model(model_id, model_file, model_type, prompt):
     llm = cAutoModelForCausalLM.from_pretrained(model_id, model_file=model_file, model_type=model_type, gpu_layers=50, context_length=30000)
     print(llm(prompt))
 
-def normal_model(model_id, tokenizer_id, prompt):
+def normal_model(model_id, tokenizer_id, prompt, generation_args):
     torch.random.manual_seed(0)
     messages = [
         {"role": "user", "content": prompt},
@@ -31,12 +31,6 @@ def normal_model(model_id, tokenizer_id, prompt):
         tokenizer=tokenizer,
     )
     
-    generation_args = {
-        "max_new_tokens": 8000,
-        "return_full_text": True,
-        "temperature": 0.0,
-        "do_sample": False,
-    }
     
     output = pipe(messages, **generation_args)
     return output[0]['generated_text'][1]['content']

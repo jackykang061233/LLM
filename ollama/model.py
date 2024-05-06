@@ -124,7 +124,7 @@ def run(task, model, tokenizer, max_length=2000):
             'content': user_prompt
             },
         ])
-        print(response)
+
         
         return response['message']['content']
 
